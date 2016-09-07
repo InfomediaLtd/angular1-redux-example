@@ -32,7 +32,7 @@ export default function(appStore) {
             <ul>
               <li ng-repeat="todo in todos">
                 <label class="checkbox">
-                  <input type="checkbox" ng-click="toggle(todo)">
+                  <input type="checkbox" ng-click="toggle(todo)" ng-checked="todo.done">
                   <span class="done-{{todo.done}}">{{todo.text}}</span>
                 </label>
               </li>
